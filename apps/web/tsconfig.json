@@ -1,0 +1,21 @@
+{
+  "extends": "./src/.umi/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@@/*": [
+        "src/.umi/*"
+      ],
+      "umi/typings": [
+        "src/.umi/typings"
+      ],
+      "@workspace/ui/*": ["../../packages/ui/src/*"],
+      "@workspace/ui/components/*": ["../../packages/ui/src/components/*"],
+      "@workspace/ui/lib/*": ["../../packages/ui/src/lib/*"],
+      "@workspace/ui/hooks/*": ["../../packages/ui/src/hooks/*"]
+    }
+  }
+}
